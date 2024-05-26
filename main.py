@@ -37,7 +37,8 @@ class Klasa:
 
     def __str__(self):
         uczniowie_str = ', '.join([uczen.imie_nazwisko for uczen in self.uczniowie])
-        return f"<Klasa: {self.nazwa} uczniowie: [{uczniowie_str}] pod opieką: {self.wychowawca.imie_nazwisko if self.wychowawca else 'Brak wychowawcy'}>"
+        return f"""<Klasa: {self.nazwa} uczniowie: [{uczniowie_str}] 
+        pod opieką: {self.wychowawca.imie_nazwisko if self.wychowawca else 'Brak wychowawcy'}>"""
 
 
 def wczytaj_wychowawce():
